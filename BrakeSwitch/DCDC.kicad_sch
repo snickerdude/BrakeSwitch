@@ -1115,7 +1115,19 @@
 		(at 31.75 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "57c996c6-d60c-4d3b-bbd5-2585ad0b0a4b")
+		(uuid "614c59c8-59cf-4375-b735-f4fdd5d593d3")
+	)
+	(junction
+		(at 20.32 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "84c572b2-a97d-4e8f-941a-9073653c6c5c")
+	)
+	(junction
+		(at 31.75 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "89bd8734-cfb2-4450-9387-ab0661b7447f")
 	)
 	(junction
 		(at 88.9 26.67)
@@ -1128,12 +1140,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ca44fac7-545e-4340-933a-0b270f313d92")
-	)
-	(junction
-		(at 31.75 34.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fa570085-5a13-43bd-9c0a-b25a61ce8909")
 	)
 	(wire
 		(pts
@@ -1197,7 +1203,17 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 26.67) (xy 31.75 26.67)
+			(xy 31.75 26.67) (xy 44.45 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "183a056f-0a30-448a-adeb-9168550f5dc3")
+	)
+	(wire
+		(pts
+			(xy 16.51 26.67) (xy 20.32 26.67)
 		)
 		(stroke
 			(width 0)
@@ -1214,6 +1230,16 @@
 			(type default)
 		)
 		(uuid "3098e9ff-d657-4372-a4ec-ccf211444886")
+	)
+	(wire
+		(pts
+			(xy 20.32 26.67) (xy 31.75 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47bfea93-f6c6-4374-9cae-0d8981d64b46")
 	)
 	(wire
 		(pts
@@ -1234,16 +1260,6 @@
 			(type default)
 		)
 		(uuid "6845a370-ebee-4b48-92a4-3701f3816aca")
-	)
-	(wire
-		(pts
-			(xy 31.75 26.67) (xy 44.45 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69b6bbf9-876f-4de0-bfa8-5e31969a1c39")
 	)
 	(wire
 		(pts
@@ -1294,6 +1310,16 @@
 			(type default)
 		)
 		(uuid "93d7da05-61a6-4f01-8dbf-6f0347119dc6")
+	)
+	(wire
+		(pts
+			(xy 31.75 34.29) (xy 20.32 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb304177-dceb-49e0-af10-24cd3e64501d")
 	)
 	(wire
 		(pts
@@ -2213,7 +2239,7 @@
 	)
 	(hierarchical_label "Vin"
 		(shape input)
-		(at 24.13 26.67 180)
+		(at 16.51 26.67 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2301,6 +2327,76 @@
 	)
 	(symbol
 		(lib_id "Device:C_US")
+		(at 20.32 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "37f93a17-2b9e-492c-b89f-50121a5aaa4f")
+		(property "Reference" "C4"
+			(at 24.13 29.4639 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "180u"
+			(at 24.13 32.0039 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_8x10.5"
+			(at 20.32 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 20.32 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "capacitor, US symbol"
+			(at 20.32 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ea948c5e-a8cb-4e7f-a117-c5f62a9da16e")
+		)
+		(pin "1"
+			(uuid "8604b3d4-e8a6-4bef-a091-e7ab52fbc213")
+		)
+		(instances
+			(project "BrakeSwitch"
+				(path "/fe3f2fb8-8742-4f31-813f-1dad9d418d71/293b1cf4-e9c5-4398-be38-45432f0835da"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_US")
 		(at 101.6 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2318,7 +2414,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C_US"
+		(property "Value" "180u"
 			(at 105.41 32.0039 0)
 			(effects
 				(font
@@ -2327,7 +2423,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_8x10.5"
 			(at 101.6 30.48 0)
 			(effects
 				(font
@@ -2549,7 +2645,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "1k"
 			(at 55.88 39.3699 0)
 			(effects
 				(font
@@ -2558,7 +2654,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 54.356 38.354 90)
 			(effects
 				(font
@@ -2601,6 +2697,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_US")
+		(at 31.75 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "778b4b80-0761-44b5-8fbc-4b586aee756b")
+		(property "Reference" "C1"
+			(at 35.56 29.4639 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "180u"
+			(at 35.56 32.0039 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_8x10.5"
+			(at 31.75 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "capacitor, US symbol"
+			(at 31.75 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "562f65e3-6f07-4079-a57e-31e3d971e3b9")
+		)
+		(pin "1"
+			(uuid "e5173aad-d947-4130-b0a9-13c17d49f9e5")
+		)
+		(instances
+			(project "BrakeSwitch"
+				(path "/fe3f2fb8-8742-4f31-813f-1dad9d418d71/293b1cf4-e9c5-4398-be38-45432f0835da"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 44.45 30.48 0)
 		(unit 1)
@@ -2619,7 +2785,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "1u"
 			(at 48.26 31.7499 0)
 			(effects
 				(font
@@ -2628,7 +2794,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 45.4152 34.29 0)
 			(effects
 				(font
@@ -2755,7 +2921,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1N5820"
+		(property "Value" "B240A-13-F"
 			(at 91.44 31.4324 90)
 			(effects
 				(font
@@ -2764,7 +2930,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 88.9 30.48 0)
 			(effects
 				(font
@@ -2773,7 +2939,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/B220_A-B260_A.pdf"
 			(at 88.9 30.48 0)
 			(effects
 				(font
@@ -2784,6 +2950,15 @@
 		)
 		(property "Description" "Schottky diode"
 			(at 88.9 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/diodes-incorporated/B240A-13-F/717691"
+			(at 88.9 30.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2824,7 +2999,7 @@
 				)
 			)
 		)
-		(property "Value" "L"
+		(property "Value" "68u"
 			(at 95.25 19.05 90)
 			(effects
 				(font
@@ -2832,7 +3007,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_12x12mm_H4.5mm"
 			(at 95.25 21.59 0)
 			(effects
 				(font
@@ -2852,6 +3027,15 @@
 		)
 		(property "Description" "Inductor"
 			(at 95.25 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/sumida-america-inc/CDRH124NP-680MC/3947049"
+			(at 95.25 21.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3001,76 +3185,6 @@
 			(project "BrakeSwitch"
 				(path "/fe3f2fb8-8742-4f31-813f-1dad9d418d71/293b1cf4-e9c5-4398-be38-45432f0835da"
 					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_US")
-		(at 31.75 30.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f0573d9b-88eb-4a8a-8a5c-91074a3e50c6")
-		(property "Reference" "C1"
-			(at 35.56 29.4639 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "C_US"
-			(at 35.56 32.0039 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 31.75 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 31.75 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "capacitor, US symbol"
-			(at 31.75 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "385708fb-b1eb-4d83-8bb0-eeb884aa12ba")
-		)
-		(pin "1"
-			(uuid "7165f85f-775d-4f40-9ea2-4e4cd70b000e")
-		)
-		(instances
-			(project "BrakeSwitch"
-				(path "/fe3f2fb8-8742-4f31-813f-1dad9d418d71/293b1cf4-e9c5-4398-be38-45432f0835da"
-					(reference "C1")
 					(unit 1)
 				)
 			)
