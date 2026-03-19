@@ -1106,6 +1106,12 @@
 		)
 	)
 	(junction
+		(at 111.76 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "01fc88b7-2d0c-45bf-9b74-efedb63faee5")
+	)
+	(junction
 		(at 101.6 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1128,6 +1134,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "89bd8734-cfb2-4450-9387-ab0661b7447f")
+	)
+	(junction
+		(at 121.92 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a492b4f9-831f-47a6-8611-b1fd981ea423")
 	)
 	(junction
 		(at 88.9 26.67)
@@ -1243,6 +1255,26 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 34.29) (xy 121.92 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f6140b9-7a35-4d73-84d3-f3a3b5ea6eb0")
+	)
+	(wire
+		(pts
+			(xy 111.76 34.29) (xy 111.76 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fbed524-3d7e-4f64-8227-41d0669031c2")
+	)
+	(wire
+		(pts
 			(xy 101.6 34.29) (xy 101.6 44.45)
 		)
 		(stroke
@@ -1283,7 +1315,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 26.67) (xy 109.22 26.67)
+			(xy 101.6 26.67) (xy 111.76 26.67)
 		)
 		(stroke
 			(width 0)
@@ -1320,6 +1352,26 @@
 			(type default)
 		)
 		(uuid "bb304177-dceb-49e0-af10-24cd3e64501d")
+	)
+	(wire
+		(pts
+			(xy 111.76 26.67) (xy 121.92 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7fc86fa-254d-4201-9ff2-6aab416cf0fd")
+	)
+	(wire
+		(pts
+			(xy 121.92 26.67) (xy 129.54 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f554998d-7b61-4433-9ec2-8f1f2b068e0e")
 	)
 	(wire
 		(pts
@@ -2250,7 +2302,7 @@
 	)
 	(hierarchical_label "5V"
 		(shape input)
-		(at 109.22 26.67 0)
+		(at 129.54 26.67 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2258,6 +2310,76 @@
 			(justify left)
 		)
 		(uuid "61b556d0-40f6-4159-ace8-db0ed0af98cd")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 121.92 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0a3265e4-6c55-47be-8639-b74dadd82a88")
+		(property "Reference" "C6"
+			(at 125.73 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 125.73 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 122.8852 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 121.92 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e93b054e-3041-4bfc-b617-981137f94389")
+		)
+		(pin "2"
+			(uuid "30dde11a-61d4-44c9-b163-831eeff5ece5")
+		)
+		(instances
+			(project "BrakeSwitch"
+				(path "/fe3f2fb8-8742-4f31-813f-1dad9d418d71/293b1cf4-e9c5-4398-be38-45432f0835da"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -2320,6 +2442,72 @@
 			(project "BrakeSwitch"
 				(path "/fe3f2fb8-8742-4f31-813f-1dad9d418d71/293b1cf4-e9c5-4398-be38-45432f0835da"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.92 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "18d23c0c-ae3e-45d3-bbcf-cc10609c0e92")
+		(property "Reference" "#PWR015"
+			(at 121.92 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.92 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 121.92 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c028fed1-21b1-4bd2-9d08-04a2430748f2")
+		)
+		(instances
+			(project "BrakeSwitch"
+				(path "/fe3f2fb8-8742-4f31-813f-1dad9d418d71/293b1cf4-e9c5-4398-be38-45432f0835da"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -2831,6 +3019,142 @@
 			(project "BrakeSwitch"
 				(path "/fe3f2fb8-8742-4f31-813f-1dad9d418d71/293b1cf4-e9c5-4398-be38-45432f0835da"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 111.76 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a81b4e1-8e2d-428c-aaab-a08858bcb758")
+		(property "Reference" "C5"
+			(at 115.57 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 115.57 31.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 112.7252 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 111.76 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2da5b034-8e42-46ff-aff1-2acd8ad33a3b")
+		)
+		(pin "2"
+			(uuid "2c8d2cae-7b32-48d1-ad2e-3e9849d31aa4")
+		)
+		(instances
+			(project "BrakeSwitch"
+				(path "/fe3f2fb8-8742-4f31-813f-1dad9d418d71/293b1cf4-e9c5-4398-be38-45432f0835da"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 111.76 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93cc8b93-0ab0-4d39-a59f-b96da3dc2f20")
+		(property "Reference" "#PWR014"
+			(at 111.76 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 111.76 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 111.76 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "55993f1d-9473-4a78-9741-417865b24e1f")
+		)
+		(instances
+			(project "BrakeSwitch"
+				(path "/fe3f2fb8-8742-4f31-813f-1dad9d418d71/293b1cf4-e9c5-4398-be38-45432f0835da"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
