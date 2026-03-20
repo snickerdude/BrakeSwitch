@@ -1097,6 +1097,89 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Simulation_SPICE:NMOS"
 			(pin_numbers
 				(hide yes)
@@ -1584,7 +1667,7 @@
 		)
 		(uuid 6384f029-69d7-44a6-87cc-1a24fcee4769)
 	)
-	(text "Board Outputs"
+	(text "Board ports"
 		(exclude_from_sim no)
 		(at 178.562 74.676 0)
 		(effects
@@ -1593,6 +1676,12 @@
 			)
 		)
 		(uuid "20de8f9e-f20a-4af9-8c90-e38e38720c4f")
+	)
+	(junction
+		(at 64.77 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0fc39840-06a0-4f39-9492-6a9b18111f6a")
 	)
 	(junction
 		(at 137.16 40.64)
@@ -1611,12 +1700,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6e55e11a-4d6d-4042-98b8-b86a1d87e836")
-	)
-	(junction
-		(at 71.12 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a19ec87b-b431-4556-83e9-1a538968cf2c")
 	)
 	(junction
 		(at 128.27 35.56)
@@ -1646,16 +1729,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 33.02) (xy 71.12 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11e4684d-8f21-4229-b12a-cf23fab1ec6c")
-	)
-	(wire
-		(pts
 			(xy 45.72 24.13) (xy 44.45 24.13)
 		)
 		(stroke
@@ -1676,23 +1749,23 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 38.1) (xy 71.12 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1cb1aec8-f982-4f1b-885a-423e479ea409")
-	)
-	(wire
-		(pts
-			(xy 85.09 57.15) (xy 91.44 57.15)
+			(xy 60.96 57.15) (xy 64.77 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1f9ddddd-3773-4bf7-ae38-3f8a36ac0201")
+	)
+	(wire
+		(pts
+			(xy 64.77 57.15) (xy 64.77 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "265c969c-d805-4d3d-9062-440ba0facd43")
 	)
 	(wire
 		(pts
@@ -1766,13 +1839,13 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 33.02) (xy 71.12 33.02)
+			(xy 64.77 57.15) (xy 91.44 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "693bb3da-43aa-4ba5-81c2-7e65a3da4f54")
+		(uuid "66a0dc66-9718-4e17-b342-afde64532216")
 	)
 	(wire
 		(pts
@@ -1816,16 +1889,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 69.85) (xy 86.36 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89c9c89e-0ec5-42cb-aa74-03ec162cb810")
-	)
-	(wire
-		(pts
 			(xy 64.77 24.13) (xy 91.44 24.13)
 		)
 		(stroke
@@ -1856,7 +1919,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 36.83) (xy 64.77 45.72)
+			(xy 64.77 41.91) (xy 64.77 45.72)
 		)
 		(stroke
 			(width 0)
@@ -1886,13 +1949,33 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 24.13) (xy 64.77 29.21)
+			(xy 64.77 24.13) (xy 64.77 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d84e475e-2422-4106-bd71-a35fdb344312")
+	)
+	(wire
+		(pts
+			(xy 68.58 69.85) (xy 86.36 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcbefedb-43af-4fab-88c5-8cf96b7aca05")
+	)
+	(wire
+		(pts
+			(xy 21.59 24.13) (xy 24.13 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0c77878-84c9-419e-856f-dfa144284bfc")
 	)
 	(wire
 		(pts
@@ -1916,7 +1999,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 38.1) (xy 86.36 38.1)
+			(xy 68.58 38.1) (xy 86.36 38.1)
 		)
 		(stroke
 			(width 0)
@@ -1933,6 +2016,16 @@
 			(type default)
 		)
 		(uuid "f2372d3b-e380-4508-ac08-a1b3e24dec22")
+	)
+	(wire
+		(pts
+			(xy 64.77 73.66) (xy 64.77 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3fb79f3-98ed-45b6-97a9-04b046fb530f")
 	)
 	(global_label "Light Out"
 		(shape input)
@@ -1958,7 +2051,7 @@
 	)
 	(global_label "5V"
 		(shape input)
-		(at 85.09 57.15 180)
+		(at 60.96 57.15 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1968,7 +2061,7 @@
 		)
 		(uuid "3840ec5b-67d2-4eb8-9843-00fa600fbd5f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 79.8067 57.15 0)
+			(at 55.6767 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2264,6 +2357,28 @@
 			)
 		)
 	)
+	(global_label "12V"
+		(shape input)
+		(at 21.59 24.13 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ceec057b-f320-4900-b6dd-679ccde2e4d9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 15.0972 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "5V"
 		(shape input)
 		(at 184.15 58.42 180)
@@ -2457,24 +2572,21 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "028588e1-6847-4120-9c2c-2fef08a1e0a2")
 		(property "Reference" "J6"
-			(at 213.36 55.8799 0)
+			(at 209.804 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "12V_in"
-			(at 213.36 58.4199 0)
+		(property "Value" "12V_Out"
+			(at 209.804 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "AA-Custom:SolderPad_01x02"
@@ -2787,6 +2899,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Potentiometer_US")
+		(at 64.77 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "37457498-5fd7-41b6-947d-597f06d2b666")
+		(property "Reference" "RV2"
+			(at 62.23 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Thresh"
+			(at 62.23 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Runtron_RM-065_Vertical"
+			(at 64.77 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/amphenol-piher-sensing-systems/N6L50T0N-203-3030/16028685"
+			(at 64.77 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Potentiometer, US symbol"
+			(at 64.77 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey" "https://www.digikey.com/en/products/detail/amphenol-piher-sensing-systems/N6L50T0N-203-3030/16028685"
+			(at 64.77 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "789cc058-e54e-4740-94e1-5021441b446b")
+		)
+		(pin "1"
+			(uuid "857aa16d-00d0-41c8-a874-d5b0ee6f6b4a")
+		)
+		(pin "2"
+			(uuid "11c29a7b-1107-45ac-a0f9-dc4f7d742ab6")
+		)
+		(instances
+			(project "BrakeSwitch"
+				(path "/fe3f2fb8-8742-4f31-813f-1dad9d418d71"
+					(reference "RV2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
 		(at 189.23 26.67 0)
 		(unit 1)
@@ -2925,7 +3119,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Potentiometer_US")
-		(at 64.77 33.02 0)
+		(at 64.77 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2934,7 +3128,7 @@
 		(fields_autoplaced yes)
 		(uuid "56369af4-3338-436d-94a4-e9508a201cd0")
 		(property "Reference" "RV1"
-			(at 62.23 31.7499 0)
+			(at 62.23 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2943,7 +3137,7 @@
 			)
 		)
 		(property "Value" "Thresh"
-			(at 62.23 34.2899 0)
+			(at 62.23 39.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2952,7 +3146,7 @@
 			)
 		)
 		(property "Footprint" "Potentiometer_THT:Potentiometer_Runtron_RM-065_Vertical"
-			(at 64.77 33.02 0)
+			(at 64.77 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2961,7 +3155,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.com/en/products/detail/amphenol-piher-sensing-systems/N6L50T0N-203-3030/16028685"
-			(at 64.77 33.02 0)
+			(at 64.77 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2970,7 +3164,7 @@
 			)
 		)
 		(property "Description" "Potentiometer, US symbol"
-			(at 64.77 33.02 0)
+			(at 64.77 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2979,7 +3173,7 @@
 			)
 		)
 		(property "DigiKey" "https://www.digikey.com/en/products/detail/amphenol-piher-sensing-systems/N6L50T0N-203-3030/16028685"
-			(at 64.77 33.02 0)
+			(at 64.77 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3024,7 +3218,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Back_Pads"
+		(property "Value" "Rear_Loop"
 			(at 190.5 59.6899 0)
 			(effects
 				(font
@@ -3434,6 +3628,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 64.77 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9a15a4d1-8304-40a4-befa-959b1b294962")
+		(property "Reference" "#PWR017"
+			(at 64.77 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 64.77 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 64.77 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "28257dea-e22f-47af-bb9d-774ed0fa545f")
+		)
+		(instances
+			(project "BrakeSwitch"
+				(path "/fe3f2fb8-8742-4f31-813f-1dad9d418d71"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x03_Socket")
 		(at 189.23 43.18 0)
 		(unit 1)
@@ -3452,7 +3712,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Front_Pads"
+		(property "Value" "Front_Loop"
 			(at 190.5 44.4499 0)
 			(effects
 				(font
@@ -3567,6 +3827,70 @@
 			(project "BrakeSwitch"
 				(path "/fe3f2fb8-8742-4f31-813f-1dad9d418d71"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 48.26 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c09a3579-846d-4ccc-89f9-437a65d9ce66")
+		(property "Reference" "H1"
+			(at 50.8 101.5999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 50.8 104.1399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_6.5mm_Pad"
+			(at 48.26 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.26 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 48.26 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "BrakeSwitch"
+				(path "/fe3f2fb8-8742-4f31-813f-1dad9d418d71"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -3757,10 +4081,6 @@
 		(instances
 			(project "BrakeSwitch"
 				(path "/fe3f2fb8-8742-4f31-813f-1dad9d418d71"
-					(reference "Q1")
-					(unit 1)
-				)
-				(path "/fe3f2fb8-8742-4f31-813f-1dad9d418d71/293b1cf4-e9c5-4398-be38-45432f0835da"
 					(reference "Q1")
 					(unit 1)
 				)
