@@ -3871,9 +3871,9 @@
 	(footprint "AA-Custom:SPDT_PanelMount_Switch"
 		(layer "F.Cu")
 		(uuid "f29b3d54-738c-4c4e-a4d5-c4d902b8e38f")
-		(at 82.916 69.342)
+		(at 48.26 53.355 -90)
 		(property "Reference" "SW1"
-			(at 0 4.5 0)
+			(at 0 4.5 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -3886,7 +3886,7 @@
 			)
 		)
 		(property "Value" "AT SW-R2-2B-F-1-0"
-			(at 0 6 0)
+			(at 0 6 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "4a0771a9-85f4-49b5-8b6d-a296e093d870")
@@ -3898,7 +3898,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.at/en/products/detail/adam-tech/SW-R2-2B-F-1-0/15284399"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3911,7 +3911,7 @@
 			)
 		)
 		(property "Description" "Switch, single pole double throw"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -3928,8 +3928,30 @@
 		(sheetname "/")
 		(sheetfile "BrakeSwitch.kicad_sch")
 		(attr smd)
+		(fp_rect
+			(start -9.4 -6.5)
+			(end 9.4 6.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "4bf28b31-117e-407d-858b-c9e935a7835a")
+		)
+		(fp_rect
+			(start -9.65 -6.75)
+			(end 9.65 6.75)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "304f6626-dde9-4fa1-a377-357f3d158a0b")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 0 7.5 0)
+			(at 0 7.5 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "fa08698a-c191-415e-b0cf-43a308f4b16e")
@@ -3941,7 +3963,7 @@
 			)
 		)
 		(pad "1" thru_hole oval
-			(at -7 0 180)
+			(at -7 0 90)
 			(size 3 7)
 			(drill oval 1 5)
 			(layers "*.Cu" "*.Mask")
@@ -3952,7 +3974,7 @@
 			(uuid "06eb449f-70f2-4bf0-8874-3d21a1ff270e")
 		)
 		(pad "2" thru_hole oval
-			(at 0 0 180)
+			(at 0 0 90)
 			(size 3 7)
 			(drill oval 1 5)
 			(layers "*.Cu" "*.Mask")
@@ -3963,7 +3985,7 @@
 			(uuid "dee39306-c987-44f9-b3e7-914e016efc9e")
 		)
 		(pad "3" thru_hole oval
-			(at 7 0 180)
+			(at 7 0 90)
 			(size 3 7)
 			(drill oval 1 5)
 			(layers "*.Cu" "*.Mask")
@@ -3974,6 +3996,17 @@
 			(uuid "a3cf7fe8-8b64-4e9c-9055-28f0050dcd01")
 		)
 		(embedded_fonts no)
+		(model "D:/Git/KiCadCustom/CadModels/RockerSwitchSPDT.step"
+			(offset
+				(xyz 0 0 14.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "Potentiometer_THT:Potentiometer_Runtron_RM-065_Vertical"
 		(layer "F.Cu")
@@ -4755,7 +4788,7 @@
 	(footprint "AA-Custom:SolderPad_01x02"
 		(layer "B.Cu")
 		(uuid "0305d5b6-527c-4814-8a29-60a95246fd73")
-		(at 56.896 55.118 90)
+		(at 35.941 54.991 90)
 		(property "Reference" "J1"
 			(at 0 2.54 90)
 			(unlocked yes)
@@ -5695,7 +5728,7 @@
 	(footprint "AA-Custom:SolderPad_01x02"
 		(layer "B.Cu")
 		(uuid "37ab196d-6b21-4c4f-a1ee-35bfe4fcfb27")
-		(at 56.896 60.96 -90)
+		(at 35.941 60.833 -90)
 		(property "Reference" "J6"
 			(at 0 -2.5 90)
 			(unlocked yes)
@@ -5794,7 +5827,7 @@
 	(footprint "AA-Custom:SolderPad_01x03"
 		(layer "B.Cu")
 		(uuid "3822d968-3b09-4ad0-bf03-45081fb1ac91")
-		(at 74.628 62.23 180)
+		(at 87.455 71.628 180)
 		(property "Reference" "J4"
 			(at 0 -2.5 0)
 			(unlocked yes)
@@ -6744,7 +6777,7 @@
 	(footprint "AA-Custom:SolderPad_01x03"
 		(layer "B.Cu")
 		(uuid "c999b43f-1005-4202-9ad3-0598196e5c20")
-		(at 65.834 62.23 180)
+		(at 78.661 71.628 180)
 		(property "Reference" "J5"
 			(at 0 -2.5 0)
 			(unlocked yes)
@@ -6999,13 +7032,13 @@
 	(footprint "AA-Custom:SolderPad_01x02"
 		(layer "B.Cu")
 		(uuid "d45c99d0-9811-4994-b658-e8f1bc61710b")
-		(at 56.642 40.894 90)
+		(at 35.687 40.767 90)
 		(property "Reference" "J2"
 			(at 0 2.286 270)
 			(unlocked yes)
 			(layer "B.SilkS")
 			(hide yes)
-			(uuid "c52cdec9-4496-412e-93ea-1e4fe17ea837")
+			(uuid "01bbf83a-86be-47a7-9e4c-bf32339ba871")
 			(effects
 				(font
 					(size 1 1)
@@ -7018,7 +7051,7 @@
 			(at 0 -4 270)
 			(unlocked yes)
 			(layer "B.Fab")
-			(uuid "4af1d603-f8f6-4c0b-bbc5-169d3eaf53e8")
+			(uuid "857b7b16-8f9f-49a8-bafc-9f04926c4d3b")
 			(effects
 				(font
 					(size 1 1)
@@ -7032,7 +7065,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "2c54695e-33ee-4fb0-824d-89570c5472e6")
+			(uuid "b17c85f7-1ec1-4b0b-9ec5-97d04e9af604")
 			(effects
 				(font
 					(size 1 1)
@@ -7046,7 +7079,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "0d5ac893-c617-46b5-9ed2-6400a2ee9fc3")
+			(uuid "a5b3415c-df0e-4393-b41b-47a6f6960e3a")
 			(effects
 				(font
 					(size 1 1)
@@ -7622,7 +7655,7 @@
 	(footprint "AA-Custom:SolderPad_01x02"
 		(layer "B.Cu")
 		(uuid "e4b2f892-a36a-4c2a-a786-cee350090004")
-		(at 56.896 49.276 90)
+		(at 35.941 49.149 90)
 		(property "Reference" "J3"
 			(at 3.556 0 270)
 			(unlocked yes)
@@ -7718,88 +7751,16 @@
 		)
 		(embedded_fonts no)
 	)
-	(gr_line
-		(start 92.71 42.672)
-		(end 93.472 39.116)
+	(gr_rect
+		(start 24.257 19.558)
+		(end 106.553 79.375)
 		(stroke
-			(width 2.54)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "85044bf7-e18a-4c26-a51f-d881d29c7a9e")
-	)
-	(gr_circle
-		(center 92.71 50.8)
-		(end 100.076 50.8)
-		(stroke
-			(width 1.016)
+			(width 0.2)
 			(type solid)
 		)
 		(fill no)
-		(layer "F.SilkS")
-		(uuid "e2c44b50-e0ef-4a00-b303-72bb730c7f91")
-	)
-	(gr_line
-		(start 92.837 58.928)
-		(end 93.599 62.484)
-		(stroke
-			(width 2.54)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "d8c715d1-6193-4273-9c1d-191e6bf04f08")
-	)
-	(gr_line
-		(start 54.61 64.008)
-		(end 54.61 37.592)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
 		(layer "Edge.Cuts")
-		(uuid "70761b17-2bb2-4848-ac6a-b750bad41457")
-	)
-	(gr_line
-		(start 82.804 37.592)
-		(end 54.61 37.592)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "Edge.Cuts")
-		(uuid "79555d40-5d63-43fa-92ba-59c3902d929e")
-	)
-	(gr_curve
-		(pts
-			(xy 82.804 37.592) (xy 82.804 37.592) (xy 102.362 37.592) (xy 102.362 50.8)
-		)
-		(stroke
-			(width 0.127)
-			(type solid)
-		)
-		(layer "Edge.Cuts")
-		(uuid "d7d0da33-296c-4928-bad0-9a10af176d99")
-	)
-	(gr_line
-		(start 82.804 64.008)
-		(end 54.61 64.008)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(layer "Edge.Cuts")
-		(uuid "186306c1-e0c7-440e-97f1-a9fa98a567ef")
-	)
-	(gr_curve
-		(pts
-			(xy 102.362 50.8) (xy 102.362 64.008) (xy 82.804 64.008) (xy 82.804 64.008)
-		)
-		(stroke
-			(width 0.127)
-			(type solid)
-		)
-		(layer "Edge.Cuts")
-		(uuid "559d2011-88fe-45e1-a3a2-df6f785521ee")
+		(uuid "a363c9e7-4a58-4ec8-bee7-ce422470d13c")
 	)
 	(gr_text "Diddy's Minion\nRIT Baja 3/19/2026"
 		(at 91.186 42.672 0)
