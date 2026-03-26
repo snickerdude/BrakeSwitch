@@ -3003,7 +3003,7 @@
 			)
 			(fill no)
 			(layer "F.SilkS")
-			(uuid "433b8eaa-dc79-41cd-a571-0e7b1fe394cf")
+			(uuid "20e6341b-6dfa-428e-bfd2-eeb88988777a")
 		)
 		(fp_rect
 			(start -9.65 -6.75)
@@ -3014,7 +3014,7 @@
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "562a180c-e17e-4ccd-b1d3-8223f46afc0c")
+			(uuid "651a6f9b-86e8-408a-b9c2-9b1200d5deaf")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 7.5 90)
@@ -3062,6 +3062,17 @@
 			(uuid "a3cf7fe8-8b64-4e9c-9055-28f0050dcd01")
 		)
 		(embedded_fonts no)
+		(model "${KICAD9_CUSTOM_DIR}/Models/RockerSwitchSPDT.step"
+			(offset
+				(xyz 0 0 14.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "Potentiometer_THT:Potentiometer_Runtron_RM-065_Vertical"
 		(layer "F.Cu")
