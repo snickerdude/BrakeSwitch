@@ -72,9 +72,9 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "FabFiles/")
 		)
 	)
 	(net 0 "")
@@ -3003,7 +3003,7 @@
 			)
 			(fill no)
 			(layer "F.SilkS")
-			(uuid "20e6341b-6dfa-428e-bfd2-eeb88988777a")
+			(uuid "548fce63-0443-4c05-9445-f63ae428446b")
 		)
 		(fp_rect
 			(start -9.65 -6.75)
@@ -3014,7 +3014,7 @@
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "651a6f9b-86e8-408a-b9c2-9b1200d5deaf")
+			(uuid "176f0954-5316-45e4-be0b-871a721ef89d")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 7.5 90)
@@ -3062,7 +3062,7 @@
 			(uuid "a3cf7fe8-8b64-4e9c-9055-28f0050dcd01")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_CUSTOM_DIR}/Models/RockerSwitchSPDT.step"
+		(model "D:/Git/KiCadCustom/Models/RockerSwitchSPDT.step"
 			(offset
 				(xyz 0 0 14.5)
 			)
